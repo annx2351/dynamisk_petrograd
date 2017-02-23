@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Petrograd</title>
+</head>
+
+<body>
+    <header>
+        <div class="headeren">
+            <br>
+            <h2>Restaurant Petrograd</h2></div>
+    </header>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#forretter">Forretter</a></li>
+                            <li><a href="#hovedretter">Hovedretter</a></li>
+                            <li><a href="#desserter">Desserter</a></li>
+                            <li><a href="#drikkevarer">Drikkevarer</a></li>
+                            <li><a href="#sideorders">Sideorders</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-default">Søg</button>
+                </form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container-fluid" id="forretter">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>Forretter</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive">
+                <p>Russisk ringbrød med vindruer</p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Russisk ringbrød med vindruer</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="imgs/large/ringbroed-druer.jpg" alt="broedmedvindrue" class="img-responsive">
+                                <h5>Russisk ringbrød af Karapatisk mel</h5>
+                                <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                                <br>
+                                <p>Pris: 39 kr.</p>
+                                <br>
+                                <p>rabat: 50%</p>
+                                <p>udsolgt: nej</p>
+                                <p>Allergener: Laktose</p>
+                                <p>Egnet for vegetarer</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/rodbede-cabanossi.jpg" alt="roedbede" class="img-responsive">
+                <p>Cabanossi med rødbedecreme</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/caviarbruschetta.jpg" alt="bruschetta" class="img-responsive">
+                <p>Caviar bruschetta</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/baltiskbondesuppe.jpg" alt="baltisksuppe" class="img-responsive">
+                <p>Baltisk bondesuppe</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <p></p>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/baltiskbondesuppe.jpg" alt="baltiskbonde" class="img-responsive">
+                <p>Baltisk bondesuppe</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/kaalsuppe.jpg" alt="kaal" class="img-responsive">
+                <p>Østsibitisk kålsuppe</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <p></p>
+            </div>
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="container-fluid" id="hovedretter">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>Hovedretter</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/bulgarskbondesuppe.jpg" alt="bulgarsksuppe" class="img-responsive">
+                <p>Bulgarsk bondesuppe</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/mos-rogn.jpg" alt="rogn" class="img-responsive">
+                <p>Kæmperogn med kartoffelmos</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/boef.jpg" alt="boef" class="img-responsive">
+                <p>Diplomat-bøf med grønt</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/bondeplatte.jpg" alt="bondeplat" class="img-responsive">
+                <p>Zygroffs bondeplatte</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/russisktapas.jpg" alt="tapas" class="img-responsive">
+                <p>Russisk Tapas</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/moldaviskfiskesuppe.jpg" alt="moldaviskfiske" class="img-responsive">
+                <p>Moldavisk fiskesuppe</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/dynryp.jpg" alt="dynrup" class="img-responsive">
+                <p>Dynryp</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+            </div>
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="container-fluid" id="desserter">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>Desserter</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/kaviarpandekager.jpg" alt="kaviarpande" class="img-responsive">
+                <p>Pandekager med kaviar</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/guzni.jpg" alt="guzni" class="img-responsive">
+                <p>Guzni</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/kirgisiskroulade.jpg" alt="roulade" class="img-responsive">
+                <p>Kirgisisk roulade</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/pavlova.jpg" alt="pavlova" class="img-responsive">
+                <p>Pavlova i melon</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/pavlova.jpg" alt="pavlovamelon" class="img-responsive">
+                <p>Pavlova i melon</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/groggiroshorn.jpg" alt="groggiroshorn" class="img-responsive">
+                <p>Groggiroshorn</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/syltedeloeg.jpg" alt="syltedeloeg" class="img-responsive">
+                <p>Søde, syltede løg</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid" id="drikkevarer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>Drikkevarer</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/bochkarev.jpg" alt="bochkarev" class="img-responsive">
+                <p>Bochkarev fadøl</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/voda.jpg" alt="vodka" class="img-responsive">
+                <p>Vodka-vodka</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/cola.jpg" alt="cola" class="img-responsive">
+                <p>Gloske (cola)</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/roedvin.jpg" alt="roedvin" class="img-responsive">
+                <p>Rødvin, glas</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/hvidvin.jpg" alt="hvidvin" class="img-responsive">
+                <p>Hvidvin, glas</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="container-fluid" id="sideorders">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>Sideorders</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+                <img src="imgs/large/ringbroed-druer.jpg" alt="ringbroedvin" class="img-responsive">
+                <p>Russisk ringbrød</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/bondeboller.jpg" alt="bondeboller" class="img-responsive">
+                <p>Murmanske bondeboller</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/russisksalat.jpg" alt="russisksalat" class="img-responsive">
+                <p>Russisk salat</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="imgs/large/kartofler.jpg" alt="kartofler" class="img-responsive">
+                <p>Kogte kartofler</p>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                    Se detaljer
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa  " crossorigin="anonymous "></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
