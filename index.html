@@ -73,17 +73,25 @@
 
 
             <!-- Forret1 -->
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive">
-                <p>Russisk ringbrød med vindruer</p>
+            <template id="produkt_template">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive data_billede">
+                    <h5 class="data_navn">DATA_NAVN</h5>
+                    <h7 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>.-</h7>
+                    <!-- TO DO sæt udsolgt class ved udsolgt -->
+                    <!-- sæt rabat class ved rabat -->
+                    <h7 class="rabatpris">Pris: <span class="data_rabatpris"> DATA_RABATPRIS</span>.-</h7>
+                    <!-- kun vises ved rabat -->
+                    <h7 class="udsolgttekst">Denne ret er desværre udsolgt</h7>
+                    <!-- skal kun vises ved udsolgte produkter -->
 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-                    Se detaljer
-                </button>
-            </div>
-            <!-- Forret1 slut -->
-
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                        Se detaljer
+                    </button>
+                </div>
+                <!-- Forret1 slut -->
+            </template>
 
             <!-- Forret2 -->
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
