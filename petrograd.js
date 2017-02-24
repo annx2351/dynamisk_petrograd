@@ -7,15 +7,32 @@ function sidenVises() {
     // læs produktliste
     $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe);
 
+    document.querySelector(".filterknap_vegetar").addEventListener("click", filtrerVegetar);
 
+}
 
+function filtrerVegetar(event) {
+    console.log("klik på vegetar-filter");
+
+    //find alle ikke-vegetar-produkter
+    var liste = document.querySelectorAll(".produkt:not(.vegetar)");
+
+    //skjul dem - tilføj klassen hide
+    liste.forEach(div => produkt.classList.toggle("hide"));
+    event.preventDefault();
 }
 
 
 function visProduktListe(listen) {
     console.table(listen);
+    // filtrer udsolgte produkter fra
+    listen = listen.filter(produkt => !produkt.udsolgt);
+
     listen.forEach(visProdukt);
 }
+
+
+
 
 
 function visProdukt(produkt) {
@@ -33,7 +50,7 @@ function visProdukt(produkt) {
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
 
 
-    if (produkt.udsolgt == udsolgt) {
+    if (produkt.udsolgt == false) {
         // produkt er ikke udsolgt
         // udsolgttekst skal fjernes
         var udsolgttekst = klon.querySelector(".udsolgttekst");
@@ -49,10 +66,10 @@ function visProdukt(produkt) {
     }
 
     //tilføj produkt-id til modalknap
-    //klon.querySelector(".modalknap").dataset.produkt = produkt.id;
+    klon.querySelector(".modalknap").dataset.produkt = produkt.id;
 
     // registrer klik på modalknap
-    //klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik)
+    klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik)
 
 
 
@@ -60,28 +77,29 @@ function visProdukt(produkt) {
     document.querySelector(".produktliste").appendChild(klon);
 }
 
-//function modalKnapKlik(event) {
-//   console.log("knapklik", event);
-// find det produkt id, hvis knap der blev trykket på
-// var produktId = event.target.dataset.produkt;
-// console.log("Klik på produkt: ", produktId);
-//$.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?", {id: produktId}, visModalProdukt);
+function modalKnapKlik(event) {
+    console.log("knapklik", event);
+    find det produkt id, hvis knap der blev trykket på
+    var produktId = event.target.dataset.produkt;
+    console.log("Klik på produkt: ", produktId);
+    $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?", {
+        id: produktId
+    }, visModalProdukt);
 
-//}
+}
 
-//function visModalProdukt(produkt) {
-//   console.log("hvis modal for", produkt);
-//find modal_template - klon den
-//var klon = document.querySelector("#modal_template").content.cloneNode(true);
+function visModalProdukt(produkt) {
+    console.log("hvis modal for", produkt);
+    find modal_template - klon den
+    var klon = document.querySelector("#modal_template").content.cloneNode(true);
 
-//put data i klonen
+    //put data i klonen
 
-//sletter det der stod i modal-content
-//document.querySelector(".modal-content").innerHTML = "";
+    //sletter det der stod i modal-content
+    document.querySelector(".modal-content").innerHTML = "";
 
-//append klonen til modal content
+    append klonen til modal content
+    document.querySelector(".modal-content").appendChild(klon);
 
-//document.querySelector(".modal-content").appendChild(klon);
 
-
-//}
+}
