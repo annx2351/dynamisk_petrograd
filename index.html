@@ -58,22 +58,23 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Forretter heading -->
-    <div class="container-fluid" id="forretter">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h4>Forretter</h4>
-            </div>
-        </div>
-    </div>
-    <!-- Forretter heading slut -->
+
+
+
 
     <div class="container-fluid">
-        <div class="row produktliste">
+        <div class="row forretliste">
             <!-- Her skal produter lægges -->
-
-
-            <!-- Forret1 -->
+            <!-- Forretter heading -->
+            <div class="container-fluid" id="forretter">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Forretter</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Forretter heading slut -->
+            <!-- Forret template -->
             <template id="produkt_template">
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive data_billede">
@@ -86,18 +87,167 @@
                     <h7 class="udsolgttekst">Denne ret er desværre udsolgt</h7>
                     <!-- skal kun vises ved udsolgte produkter -->
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-                        Se detaljer
-                    </button>
                 </div>
-                <!-- Forret1 slut -->
+                <!-- Forret template slut -->
+
+                <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal1"><span>Se detaljer</span></button>
+
             </template>
 
 
 
         </div>
     </div>
+
+
+    <div class="container-fluid">
+        <div class="row hovedretliste">
+            <!-- Her skal produter lægges -->
+            <!-- Hovedretter heading -->
+            <div class="container-fluid" id="hovedretter">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Hovedretter</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Hovedretter heading slut -->
+
+            <!-- hovedret template -->
+            <template id="produkt_template">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive data_billede">
+                    <h5 class="data_navn">DATA_NAVN</h5>
+                    <h7 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>.-</h7>
+                    <!-- TO DO sæt udsolgt class ved udsolgt -->
+                    <!-- sæt rabat class ved rabat -->
+                    <h7 class="rabatpris">Pris: <span class="data_rabatpris"> DATA_RABATPRIS</span>.-</h7>
+                    <!-- kun vises ved rabat -->
+                    <h7 class="udsolgttekst">Denne ret er desværre udsolgt</h7>
+                    <!-- skal kun vises ved udsolgte produkter -->
+
+                </div>
+                <!-- hovedret template slut -->
+                <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal1"><span>Se detaljer</span></button>
+
+            </template>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row dessertliste">
+            <!-- Her skal produter lægges -->
+            <!-- desserter heading -->
+            <div class="container-fluid" id="desserter">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Desserter</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- desserter heading slut -->
+
+            <!-- dessert template -->
+            <template id="produkt_template">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive data_billede">
+                    <h5 class="data_navn">DATA_NAVN</h5>
+                    <h7 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>.-</h7>
+                    <!-- TO DO sæt udsolgt class ved udsolgt -->
+                    <!-- sæt rabat class ved rabat -->
+                    <h7 class="rabatpris">Pris: <span class="data_rabatpris"> DATA_RABATPRIS</span>.-</h7>
+                    <!-- kun vises ved rabat -->
+                    <h7 class="udsolgttekst">Denne ret er desværre udsolgt</h7>
+                    <!-- skal kun vises ved udsolgte produkter -->
+
+                </div>
+                <!-- dessert template slut -->
+                <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal1"><span>Se detaljer</span></button>
+
+            </template>
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row drikkevarerliste">
+            <!-- Her skal produter lægges -->
+            <!-- drikkevarer heading -->
+            <div class="container-fluid" id="drikkevarer">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Drikkevarer</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- drikkevarer heading slut -->
+
+            <!-- drikkevarer template -->
+            <template id="produkt_template">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive data_billede">
+                    <h5 class="data_navn">DATA_NAVN</h5>
+                    <h7 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>.-</h7>
+                    <!-- TO DO sæt udsolgt class ved udsolgt -->
+                    <!-- sæt rabat class ved rabat -->
+                    <h7 class="rabatpris">Pris: <span class="data_rabatpris"> DATA_RABATPRIS</span>.-</h7>
+                    <!-- kun vises ved rabat -->
+                    <h7 class="udsolgttekst">Denne ret er desværre udsolgt</h7>
+                    <!-- skal kun vises ved udsolgte produkter -->
+
+                </div>
+                <!-- drikkevarer template slut -->
+                <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal1"><span>Se detaljer</span></button>
+
+            </template>
+
+
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row sideordersliste">
+            <!-- Her skal produter lægges -->
+            <!-- siderorders heading -->
+            <div class="container-fluid" id="sideorders">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Sideorders</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- sideorders heading slut -->
+
+            <!-- sideorders template -->
+            <template id="produkt_template">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <img src="imgs/large/ringbroed-druer.jpg" alt="broedvindrue" class="img-responsive data_billede">
+                    <h5 class="data_navn">DATA_NAVN</h5>
+                    <h7 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>.-</h7>
+                    <!-- TO DO sæt udsolgt class ved udsolgt -->
+                    <!-- sæt rabat class ved rabat -->
+                    <h7 class="rabatpris">Pris: <span class="data_rabatpris"> DATA_RABATPRIS</span>.-</h7>
+                    <!-- kun vises ved rabat -->
+                    <h7 class="udsolgttekst">Denne ret er desværre udsolgt</h7>
+                    <!-- skal kun vises ved udsolgte produkter -->
+
+                </div>
+                <!-- sideorders template -->
+                <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal1"><span>Se detaljer</span></button>
+
+            </template>
+
+
+
+        </div>
+    </div>
+
 
     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -110,7 +260,7 @@
 
     <template id="modal_template">
 
-        <div class="modal-header">
+        <div class="modal">
             <button type="button" class="close" data-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title data_navn">DATA_NAVN</h4>
         </div>
@@ -127,13 +277,11 @@
 
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
 
         </div>
 
     </template>
-    <hr>
-
 
 
 
